@@ -103,6 +103,9 @@ public class LruCache {
         Scanner scanner = new Scanner(System.in);
         int size = 0;
         String sizeCmd = "";
+
+        System.out.println("Welcome to my LRU (least recently used) cache");
+        System.out.println("Once the size is entered, valid commands are GET, SET, PRINT, and EXIT");
         
         while(size <= 0) {
         	System.out.println("Size (must be greater than 0): ");
@@ -116,6 +119,7 @@ public class LruCache {
         }
         
         LruCache cache = new LruCache(size);
+        System.out.println("Size of cache is: " + cache.totalSize);
         if(cache != null) {
         	System.out.println("Size OK");
         }
